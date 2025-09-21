@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manogya's Art Gallery</title>
+  <link rel="stylesheet" href="style.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Barriecito:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+  <header>
+    <div class="header-content">
+      <img src="images/manogya.jpg" alt="My Portrait" class="profile-photo">
+      <h1>Welcome to Manogya's Art Gallery</h1>
+      <p><br>Most of these masterpieces were created while pretending to take notes. Warning: may contain traces of procrastination and mild daydreaming.
+        <br>
+        <br>
+        <br>
+        Click on the exhibited art pieces to learn more about them.
+      </p>
+    </div>
+
+
+
+
+    <div class="scroll-down">&#8595;</div>
+
+    <canvas id="particles"></canvas>
+  </header>
+
+
+  <section class="gallery">
+    <div class="art-card" 
+         data-title="First Competition Participation" 
+         data-date="2019-10-09" 
+         data-description="This picture presents the painting (from the catalog) that I made for my first participation in any competition.">
+      <img src="images/29.jpg" alt="Art 1">
+    </div>
+    <div class="art-card" 
+         data-title="Garou Pencil Sketch" 
+         data-date="2022-08-26" 
+         data-description="This sketch is of a character from One Punch Man.">
+      <img src="images/48.jpg" alt="Art 1">
+    </div>
+    <div class="art-card" 
+         data-title="Woman Holding Sword" 
+         data-date="2022-10-04" 
+         data-description="This sketch depicts a woman, wearing traditional Japanese dress, holding a sword.">
+      <img src="images/54.jpg" alt="Art 2">
+    </div>
+    <div class="art-card" 
+         data-title="Zoro Pen Sketch" 
+         data-date="2022-11-07" 
+         data-description="This art is one of my first pen sketches. It depicts a character(Zoro) holding 3 swords.">
+      <img src="images/49.jpg" alt="Art 3">
+    </div>
+    <div class="art-card" 
+         data-title="Gojo Pen Sketch" 
+         data-date="2022-11-21-" 
+         data-description="This is another pen sketch I made referencing the character Gojo.">
+      <img src="images/50.jpg" alt="Art 4">
+    </div>
+    <div class="art-card" 
+         data-title="Doodles" 
+         data-date="2022-11-26" 
+         data-description="These are some sketches I made during a leave class.">
+      <img src="images/51.jpg" alt="Art 5">
+    </div>
+    <div class="art-card" 
+         data-title="Bleach Panel" 
+         data-date="2023-01-08" 
+         data-description="This sketch depicts a panel from Bleach.">
+      <img src="images/52.jpg" alt="Art 6">
+    </div>
+    <div class="art-card" 
+         data-title="Naruto Panel" 
+         data-date="2023-01-21" 
+         data-description="This sketch depicts a panel from Naruto.">
+      <img src="images/53.jpg" alt="Art 7">
+    </div>
+    <div class="art-card" 
+         data-title="Blue Lock Panel" 
+         data-date="2023-01-25" 
+         data-description="This sketch depicts a panel from Blue Lock.">
+      <img src="images/55.jpg" alt="Art 8">
+    </div>
+    <div class="art-card" 
+         data-title="One Punch Man Panel" 
+         data-date="2023-02-02" 
+         data-description="This sketch depicts a panel from One Punch Man.">
+      <img src="images/56.jpg" alt="Art 9">
+    </div>
+    <div class="art-card" 
+         data-title="Warrior holding a sword" 
+         data-date="2023-02-08" 
+         data-description="This pen-sketch represents one of the first non-anime/manga sketch I did. I really like the gradiations I have made using a pen.">
+      <img src="images/57.jpg" alt="Art 10">
+    </div>
+
+    <div class="art-card" 
+         data-title="Panel from Bleach" 
+         data-date="2023-02-09" 
+         data-description="Tried recreating this popular panel from the manga series Bleach. I dislike how I shaded very lightly.">
+      <img src="images/30.jpg" alt="Art 2">
+    </div>
+    <div class="art-card" 
+         data-title="Random Doodle Inspiration from Elden Ring" 
+         data-date="2023-04-27" 
+         data-description="These are some doodles I made in the Art Room.">
+      <img src="images/31.jpg" alt="Art 3">
+    </div>
+    <div class="art-card" 
+         data-title="Random Doodle inspiration from Elden Ring" 
+         data-date="2023-04-27" 
+         data-description="These are some doodles I made in the Art Room.">
+      <img src="images/32.jpg" alt="Art 4">
+    </div>
+    <div class="art-card" 
+         data-title="Panel from Berserk" 
+         data-date="2023-06-28" 
+         data-description="This was my first attempt using pen and signpens. Its one of my favourite pieces so far because this is when I started trying different styles.">
+      <img src="images/33.jpg" alt="Art 5">
+    </div>
+    <div class="art-card" 
+         data-title="'Melt' by Diego Andrade" 
+         data-date="2023-08-03" 
+         data-description="'Melt' by Diego Andrade was my attempt of practicing pen sketches. I later submited it for a competition.">
+      <img src="images/34.jpg" alt="Art 6">
+    </div>
+    <div class="art-card" 
+         data-title="Participation in Kalashala" 
+         data-date="" 
+         data-description="The previous art I made was my submission for this event.">
+      <img src="images/35.jpg" alt="Art 7">
+    </div>
+    <div class="art-card" 
+         data-title="Panel from Attack on Titan" 
+         data-date="2023-09-18" 
+         data-description="The following art is from a panel from Attack on Titan which I really like.">
+      <img src="images/36.jpg" alt="Art 8">
+    </div>
+    <div class="art-card" 
+         data-title="Panel from Tomie" 
+         data-date="2023-10-06" 
+         data-description="This eerie panel caught my attention while I was browsing through Pinterest. I really liked the concept and decided to draw it myself.">
+      <img src="images/37.jpg" alt="Art 9">
+    </div>
+    <div class="art-card" 
+         data-title="Panel from Vinland Saga" 
+         data-date="2023-10-12" 
+         data-description="The following is an art representing a person in chains holding a sword. This particular panel from Vinland Saga is one of my all time favourite as it represents the burden of violence/war, slavery and struggle.">
+      <img src="images/38.jpg" alt="Art 10">
+    </div>
+
+    <div class="art-card" 
+         data-title="Cat" 
+         data-date="2023-11-21" 
+         data-description="This art piece is my first attempt in drawing a living being. The cat in the sketch is my elder sister's friend's deceased cat. I made this sketch upon my sister's request who wanted to gift the sketch to her friend.">
+      <img src="images/41.jpg" alt="Art 13">
+    </div>
+
+    <div class="art-card" 
+         data-title="Lord Krishna" 
+         data-date="2024-01-04" 
+         data-description="I painted the following art during a water colour painting competition. This painting represents a famous incident in the childhood of Lord Krishna, as described in Hindu scriptures like the Bhagavata Purana. It depicts the moment when baby Krishna revealed the entire universe within his mouth to his foster mother, Yashoda.">
+      <img src="images/43.jpg" alt="Art 15">
+    </div>
+    <div class="art-card" 
+         data-title="Eagle Sketch" 
+         data-date="2024-02-25" 
+         data-description="This art represents my attempt to a realistic sketch of an eagle! This is also my first practice of realistic pencil shading.">
+      <img src="images/1.jpg" alt="Art 16">
+    </div>
+    <div class="art-card" 
+         data-title="Cute Cat Sketch" 
+         data-date="2024-02-28" 
+         data-description="This art represents my attempt to a cute sketch of a cat. I quite enjoyed creating this piece, more than I thought I would. ">
+      <img src="images/2.jpg" alt="Art 17">
+    </div>
+    <div class="art-card" 
+         data-title="Skull grabbed by a hand" 
+         data-date="2024-02-29" 
+         data-description="This sketch, depicting a hand holding a human skull, is a classic artistic motif rich with symbolism, most notably representing memento mori, a Latin phrase meaning 'remember you must die'.">
+      <img src="images/3.jpg" alt="Art 18">
+    </div>
+    <div class="art-card" 
+         data-title="Angel sculpture" 
+         data-date="2024/03/04" 
+         data-description="Sketch of an angel-like sculpture. I am particularly impressed with the shading of details I have done in this art.">
+      <img src="images/4.jpg" alt="Art 19">
+    </div>
+    <div class="art-card" 
+         data-title="Cilian Murphy" 
+         data-date="2024-03-20" 
+         data-description="First try at portraits. Tried sketching Cilian Murphy's portrait which did not go very well.">
+      <img src="images/5.jpg" alt="Art 20">
+    </div>
+    <div class="art-card" 
+         data-title="Art 4" 
+         data-date="2024-03-06" 
+         data-description="This art is an expressive and somewhat disturbing pen and ink drawing of a human skull. The drawing uses a dense, scribbled style to create texture and shadow, emphasizing the skeletal form and creating a stark, almost frantic appearance.">
+      <img src="images/6.jpg" alt="Art 21">
+    </div>
+    <div class="art-card" 
+         data-title="Portrait" 
+         data-date="2024-03-27" 
+         data-description="I made this portrait using a reference in Pinterest. I started noticing my development in depths and details of shadows and lights.">
+      <img src="images/7.jpg" alt="Art 22">
+    </div>
+    <div class="art-card" 
+         data-title="Portrait" 
+         data-date="2024-04-24" 
+         data-description="Tried practicing some more portraits. I was unhappy with how asymmetrical the face turned out.">
+      <img src="images/8.jpg" alt="Art 23">
+    </div>
+    <div class="art-card" 
+         data-title="Portrait" 
+         data-date="2024-05-18" 
+         data-description="Another practice of a portrait referenced from Pinterest.">
+      <img src="images/9.jpg" alt="Art 24">
+    </div>
+    <div class="art-card" 
+         data-title="Portrait" 
+         data-date="2024-05-20" 
+         data-description="Another practice of a portrait referenced from Pinterest.">
+      <img src="images/10.jpg" alt="Art 25">
+    </div>
+    <div class="art-card" 
+         data-title="Portraits" 
+         data-date="2024-05-30" 
+         data-description="Some more portrait practices referenced from Pinterest. Tried using colour pencils as graphite pencils started to feel boring.">
+      <img src="images/11.jpg" alt="Art 26">
+    </div>
+    <div class="art-card" 
+         data-title="Portrait" 
+         data-date="2024-06-07" 
+         data-description="Another practice of a portrait referenced from Pinterest.">
+      <img src="images/12.jpg" alt="Art 27">
+    </div>
+    <div class="art-card" 
+         data-title="Art 4" 
+         data-date="2024-06-20" 
+         data-description="Tried charcoal for the very first time. Also, I tried using it the way its meant to be, which I figured, is very difficult.">
+      <img src="images/18.jpg" alt="Art 28">
+    </div>
+    <div class="art-card" 
+         data-title="House with Staircase" 
+         data-date="2024-07-15" 
+         data-description="Tried a pen-ink and pen brush sketch.">
+      <img src="images/19.jpg" alt="Art 29">
+    </div>
+    <div class="art-card" 
+         data-title="Peacock sculpture" 
+         data-date="2024-07-24" 
+         data-description="This is a sculpture of a peacock that me and my friends made during our Annual Dance Competition in Highschool. The peacock was made using used papers, sponge metal wires and glue.">
+      <img src="images/42.jpg" alt="Art 14">
+    </div>
+    <div class="art-card" 
+         data-title="Portrait" 
+         data-date="2024-08-19" 
+         data-description="Another practice of a portrait referenced from Pinterest.">
+      <img src="images/17.jpg" alt="Art 30">
+    </div>
+    <div class="art-card" 
+         data-title="Huge Eye" 
+         data-date="2024-09-18" 
+         data-description="Another practice of a portrait a pen-ink style sketch.">
+      <img src="images/13.jpg" alt="Art 31">
+    </div>
+    <div class="art-card" 
+         data-title="Participation in Sound of Colours Exhibition & Art Camp" 
+         data-date="2024-11-07" 
+         data-description="This painting depicts a typical Nepali Village setting, made using watercolor paints. I later submitted this painting for the Sound of Colours Art Camp.">
+      <img src="images/39.jpg" alt="Art 11">
+    </div>
+    <div class="art-card" 
+         data-title="Painitng during Art Camp" 
+         data-date="2024-11-09" 
+         data-description="The following artpiece is a painitng in progress using watercolors. It depicts the Machhapuchhre Mountain (Fish Tail Mountain) which was painted in real time referencing from the Mountain itself.">
+      <img src="images/40.jpg" alt="Art 12">
+    </div>
+    <div class="art-card" 
+         data-title="Kim Jung Gi influenced art" 
+         data-date="2024-11-19" 
+         data-description="This black and white ink drawing, reminiscent of the style of Korean master illustrator Kim Jung Gi, depicts a compelling scene featuring an anthropomorphic fox-like figure in samurai armor alongside a young woman in traditional Japanese attire.">
+      <img src="images/14.jpg" alt="Art 32">
+    </div>
+    <div class="art-card" 
+         data-title="Portrait" 
+         data-date="2024-11-23" 
+         data-description="Another practice of a portrait referenced from Pinterest.">
+      <img src="images/15.jpg" alt="Art 33">
+    </div>
+    <div class="art-card" 
+         data-title="Portrait" 
+         data-date="2024-11-27" 
+         data-description="Another practice of a portrait referenced from Pinterest.">
+      <img src="images/16.jpg" alt="Art 34">
+    </div>
+
+
+
+    <div class="art-card" 
+         data-title="Duomo di Milano door" 
+         data-date="2024-12-23" 
+         data-description="This is the artwork that I have spent most time and dedication on. It is a detailed, monochromatic rendering of a significant bronze relief panel from the main door of the Duomo di Milano, designed by sculptor Ludovico Pogliaghi and completed in 1906 ">
+      <img src="images/20.jpg" alt="Art 35">
+    </div>
+    <div class="art-card" 
+         data-title="Portrait of my elder sister" 
+         data-date="2025-01-10" 
+         data-description="I tried to sketch a portrait of my sister instead of a reference from pinterest. I am quite satisfied with how it turned out to be.">
+      <img src="images/21.jpg" alt="Art 36">
+    </div>
+    <div class="art-card" 
+         data-title="Portrait" 
+         data-date="2025-01-13" 
+         data-description="Another practice of a portrait referenced from Pinterest.">
+      <img src="images/22.jpg" alt="Art 37">
+    </div>
+    <div class="art-card" 
+         data-title="Portrait" 
+         data-date="2025-02-08" 
+         data-description="Another practice of a portrait referenced from Pinterest.">
+      <img src="images/23.jpg" alt="Art 38">
+    </div>
+
+    <div class="art-card" 
+         data-title="the Pietà" 
+         data-date="2025-02-16" 
+         data-description="This sketch is a graphite and charcoal drawing of a detail from Michelangelo's iconic sculpture, the Pietà.">
+      <img src="images/25.jpg" alt="Art 39">
+    </div>
+    <div class="art-card" 
+         data-title="Character concept art (Pin by Nam Hà Văn)" 
+         data-date="2025-03-24" 
+         data-description="This artwork is a detailed, monochromatic drawing, rendered in charcoal and graphite, depicting a figure adorned with an elaborate and symbolic winged helmet and intricate armor.">
+      <img src="images/26.jpg" alt="Art 40">
+    </div>
+    <div class="art-card" 
+         data-title="Portrait Practice sketches" 
+         data-date="2025-05-22" 
+         data-description="These are some portrait practices I did in my free time.">
+      <img src="images/27.jpg" alt="Art 41">
+    </div>
+    <div class="art-card" 
+         data-title="'Hyper' Realistic Facial expression" 
+         data-date="2025-07-31" 
+         data-description="This sketch is my first attempt at a Hyper Realistic Sketch. It did not turn out to be much 'hyper' though. This artwork is a highly detailed, monochromatic charcoal or graphite drawing that focuses on a human eye and surrounding facial features, alongside a part of a hand.">
+      <img src="images/28.jpg" alt="Art 42">
+    </div>
+    <div class="art-card" 
+         data-title="Sleeping Buddha Mural Painting" 
+         data-date="2025-08-04" 
+         data-description="A mural me and my friends made in Hotel Jalmahal. This art mural vividly portrays a Reclining Buddha, a significant motif in Buddhist art that symbolizes the Buddha's Parinirvana, or his entry into ultimate nirvana after death.">
+      <img src="images/44.jpg" alt="Art 42">
+    </div>
+    <div class="art-card" 
+         data-title="Buddha Chakra-Mandala Mural Painting" 
+         data-date="2025-08-06" 
+         data-description="A mural me and my friends made in Hotel Jalmahal. This mural is a vibrant and symbolic representation of the seven chakras within a meditating figure (Buddha), set against a detailed mandala design.">
+      <img src="images/45.jpg" alt="Art 42">
+    </div>
+    <div class="art-card" 
+         data-title="Mandala Mural Painting" 
+         data-date="2025-08-10" 
+         data-description="A mural me and my friends made in Hotel Jalmahal. This mural showcases a collection of vibrant and intricately detailed mandalas, a form of art characterized by symmetrical, circular patterns often used in spiritual practices and for meditation. ">
+      <img src="images/46.jpg" alt="Art 42">
+    </div>
+    <div class="art-card" 
+         data-title="Mandala Mural Painting" 
+         data-date="2025-08-11" 
+         data-description="A mural me and my friends made in Hotel Jalmahal. This mural features a visually captivating and intricate piece of mandala art, rich in detail and vibrant colors. ">
+      <img src="images/47.jpg" alt="Art 42">
+    </div>
+
+  </section>
+
+
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="">
+    <p class="lightbox-title"></p>
+    <p class="lightbox-date"></p>
+    <p class="lightbox-description"></p>
+    <div class="lightbox-nav">
+      <button id="prev">&lt;</button>
+      <button id="next">&gt;</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Art Gallery</p>
+  </footer>
+
+  <script src="java.js"></script>
+</body>
+</html>
